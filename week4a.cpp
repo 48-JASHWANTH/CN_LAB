@@ -19,7 +19,7 @@ int main() {
         }
     }
     cout<<endl;
-    cout<<"Hamming distances:"<<mini<<endl;
+    cout<<"Hamming distance:"<<mini<<endl;
     cout<<"No.of bits detected:"<<mini-1<<endl;
     cout<<"No.of bits corrected:"<<(mini-1)/2<<endl;
     return 0;

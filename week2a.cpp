@@ -3,9 +3,9 @@
 
 using namespace std;
 
-// Define special characters as strings
-const string FLAG = "flag";   // Frame delimiter
-const string ESC = "esc";     // Escape character
+
+string FLAG = "flag";   
+string ESC = "esc";     
 
 string characterStuffing(const string& data) {
     string stuffedData;

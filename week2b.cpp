@@ -30,24 +30,26 @@ vector<int> bitDestuffing(const vector<int>& stuffedData) {
 
     for (int i = 0; i < stuffedData.size(); ++i) {
         int bit = stuffedData[i];
+
         if (bit == 1) {
-            oneCount++;
             destuffedData.push_back(bit);
-        } else {
+            oneCount++;
             if (oneCount == 5) {
+                // Skip the next 0 after 5 consecutive 1's
                 if (i + 1 < stuffedData.size() && stuffedData[i + 1] == 0) {
-                    i++;  // Skip the stuffed zero
+                    i++; // Skip the stuffed 0
                 }
-                oneCount = 0;
-            } else {
-                destuffedData.push_back(bit);
-                oneCount = 0;
+                oneCount = 0; // Reset the one count
             }
+        } else {
+            destuffedData.push_back(bit);
+            oneCount = 0;
         }
     }
 
     return destuffedData;
 }
+
 
 vector<int> parseInputToBits(const string& input) {
     vector<int> bits;

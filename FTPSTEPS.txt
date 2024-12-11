@@ -1,0 +1,17 @@
+COMPUTER-1
+1) Go to control panel
+2) Click on network & internet
+3) Click on network & sharing center
+4) Click on advanced sharing settings
+5) In private networks make sure "network discovery" & "file and printer sharing" are turned on
+6) In all networks make sure "password protected sharing" is turned off
+7) Now create a folder and add the files that need to be shared
+8) Right click on it and click "Give access to" -> "Specific people"
+9) In the dropdown choose everyone and then click on add
+10) Choose required permission level and then click on share
+
+COMPUTER-2
+1) In file explorer go to network
+2) If network discovery is turned off then turn it on
+3) Will be able to see available devices click on computer-1
+4) Access the shared folder
